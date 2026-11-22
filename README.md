@@ -1,10 +1,12 @@
 # GazeBench
 ### Synthetic Eye Movement & Virtual Camera Rendering
-**Samsung XR Hackathon 2026 — Track 01**
+
+**Samsung XR Hackathon 2026 | Track 01**  
+**Institution:** SRM Institute of Science and Technology
 
 GazeBench is a Blender-based 3D eye movement system controlled through Python. It demonstrates controlled gaze direction, calibrated eye movement, a fixed virtual camera, and a sequence of ten clockwise gaze positions.
 
-The project provides a Blender scene, a Python eye-control wrapper, rendered image outputs, and per-frame metadata.
+The project includes a Blender scene, Python eye-control wrapper, rendered image outputs, and per-frame metadata.
 
 ---
 
@@ -12,10 +14,11 @@ The project provides a Blender scene, a Python eye-control wrapper, rendered ima
 
 The objective of GazeBench is to simulate controlled 3D eye movements and generate consistent rendered outputs with corresponding ground-truth data.
 
-The system supports:
-- Horizontal and vertical eye movement.
-- A defined gaze movement range.
-- Returning both eyes to a neutral position.
+### Key Features
+
+- Horizontal and vertical eye movement control.
+- Defined gaze movement bounds.
+- Reset functionality to return the eyes to a neutral position.
 - Ten clockwise gaze samples starting from the upward direction.
 - Per-frame metadata containing gaze inputs, eye rotations, pupil coordinates, and camera information.
 
@@ -25,7 +28,6 @@ The system supports:
 GazeBench/
 │
 ├── scene.blend
-│
 ├── scene_HEAD_RIGGED.blend
 │
 ├── wrapper/
@@ -38,26 +40,23 @@ GazeBench/
 │   └── frame_09.png
 │
 ├── textures/
-│
 ├── validation/
 │
 ├── videos/
-│
 ├── metadata.json
 ├── contact_sheet.png
-├── VALIDATION_REPORT.md
 └── README.md
 ```
 
-**Primary scene:** `scene.blend`  
+**Primary eye-control scene:** `scene.blend`  
 **Additional scene:** `scene_HEAD_RIGGED.blend`
 
-The original scene is retained as the primary eye-control scene. The head-rigged version is provided separately for inspection.
+The original scene is retained as the primary eye-control scene. The additional head-rigged version is provided separately for inspection.
 
 ## 3. Technologies Used
 
 - Blender — 3D scene creation and rendering
-- Python — eye movement control and automation
+- Python — eye movement control
 - NumPy — numerical operations
 - JSON — ground-truth metadata
 - PNG — rendered image outputs
@@ -83,18 +82,16 @@ The camera is configured as a fixed virtual camera facing the face.
 ### Requirements
 
 - Blender 4.5.x is the version used to save the submitted scene.
-- Python is provided through Blender's Python environment.
-
-For best compatibility, use Blender 4.5.x.
+- Python is available through Blender's Python environment.
 
 ### Steps
 
 1. Clone or download this repository.
 2. Open `scene.blend` in Blender.
 3. Switch to the Python Console.
-4. Add the repository's local path to Python's module search path.
+4. Add the local repository path to Python's module search path.
 
-Replace the example path below with the actual location of your downloaded GazeBench folder.
+Replace the example path with the actual location of your GazeBench folder.
 
 ```python
 import sys
@@ -159,22 +156,24 @@ The ten rendered frames are available in the `renders/` directory.
 The `metadata.json` file stores per-frame information associated with the gaze sequence.
 
 The metadata includes:
+
 - Gaze input values.
 - Left and right eye rotations.
 - Left and right pupil centre coordinates.
 - Camera information and matrix data.
 
-### Metadata limitation
+### Metadata Limitation
 
 The pupil centre coordinates are projected from pupil-object origins. They are not independently measured physical eye-tracking coordinates.
 
-Validation has shown close agreement between the projected pupil positions and image-based pupil segmentation on the supplied renders. This should be understood as a rendering and geometric consistency check, not a claim of physical eye-tracking accuracy.
+Validation has shown close agreement between projected pupil positions and image-based pupil segmentation on the supplied renders. This is a rendering and geometric consistency check, not a claim of physical eye-tracking accuracy.
 
 ## 9. Validation and Results
 
 The project includes validation materials and a contact sheet.
 
 The tested eye-control behaviour includes:
+
 - Left movement.
 - Right movement.
 - Upward movement.
@@ -195,16 +194,14 @@ The structural validation report checks the presence and basic structure of proj
 | Ten rendered frames | `renders/` |
 | Ground-truth data | `metadata.json` |
 | Contact sheet | `contact_sheet.png` |
-| Validation report | `VALIDATION_REPORT.md` |
+| Validation materials | `validation/` |
 
 ## 11. Project Links
 
 - **GitHub Repository:** https://github.com/as4918/GazeBench
 - **Presentation:** [Open Presentation](https://docs.google.com/presentation/d/11rujTvg5XPhXqhUAprfr-sGjaQVuPf5U/edit?usp=drive_link)
-- **AI Disclosure:** [Open AI Disclosure](https://docs.google.com/document/d/1lAgwAaDVfV28Aj4a58znJcG-uyfo6nJp/edit?usp=drive_link&ouid=117653696680622693660&rtpof=true&sd=true)
-- **Demo Video:** [Open Video Folder](https://drive.google.com/drive/folders/1anGJ_G9Rz1hrrXb0DwQ1y9j0L_WNCjjj?usp=sharing)
-
-The demo video link should be updated to the direct recording once the final video is uploaded.
+- **AI Disclosure:** [Open AI Disclosure](https://docs.google.com/document/d/1lAgwAaDVfV28Aj4a58znJcG-uyfo6nJp/edit?usp=sharing)
+- **Demo Video Folder:** [Open Google Drive Folder](https://drive.google.com/drive/folders/1anGJ_G9Rz1hrrXb0DwQ1y9j0L_WNCjjj?usp=sharing)
 
 ## 12. Team
 
