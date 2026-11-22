@@ -1,3 +1,11 @@
+
+PPT link: https://docs.google.com/presentation/d/11rujTvg5XPhXqhUAprfr-sGjaQVuPf5U/edit?usp=drive_link&ouid=117653696680622693660&rtpof=true&sd=true
+
+AI disclosure: https://docs.google.com/document/d/1lAgwAaDVfV28Aj4a58znJcG-uyfo6nJp/edit?usp=sharing&ouid=117653696680622693660&rtpof=true&sd=true
+
+Video link: https://drive.google.com/drive/folders/1anGJ_G9Rz1hrrXb0DwQ1y9j0L_WNCjjj?usp=sharing
+
+
 # GazeBench - Samsung XR Hackathon Track 1
 
 ## Contents
