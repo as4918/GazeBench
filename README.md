@@ -201,7 +201,7 @@ The structural validation report checks the presence and basic structure of proj
 
 - **GitHub Repository:** https://github.com/as4918/GazeBench
 - **Presentation:** [Open Presentation](https://docs.google.com/presentation/d/11rujTvg5XPhXqhUAprfr-sGjaQVuPf5U/edit?usp=drive_link)
-- **AI Disclosure:** [Open AI Disclosure](https://docs.google.com/document/d/1lAgwAaDVfV28Aj4a58znJcG-uyfo6nJp/edit?usp=sharing)
+- **AI Disclosure:** [Open AI Disclosure](https://docs.google.com/document/d/1lAgwAaDVfV28Aj4a58znJcG-uyfo6nJp/edit?usp=drive_link&ouid=117653696680622693660&rtpof=true&sd=true)
 - **Demo Video:** [Open Video Folder](https://drive.google.com/drive/folders/1anGJ_G9Rz1hrrXb0DwQ1y9j0L_WNCjjj?usp=sharing)
 
 The demo video link should be updated to the direct recording once the final video is uploaded.
