@@ -1,0 +1,28 @@
+GazeBench Track 01 - Submission Validation Report
+======================================================
+Project folder: C:\Users\anush\GitHub\GazeBench
+Checks passed: 17/17
+
+[PASS] New head-rigged Blender scene exists — scene_HEAD_RIGGED.blend
+[PASS] Original Blender scene retained — scene.blend
+[PASS] Eye controller wrapper exists — wrapper/eyes.py
+[PASS] Renders folder exists — renders/
+[PASS] Metadata JSON exists — metadata.json
+[PASS] README exists — README.md
+[PASS] Contact sheet exists — contact_sheet.png
+[PASS] Module-level eyes.move(h, v) exists
+[PASS] Module-level eyes.reset() exists
+[PASS] All 10 expected frame PNGs exist — 10/10 found
+[PASS] All found frames are valid 1024x1024 PNGs — All 10 are 1024x1024
+[PASS] Metadata JSON parses successfully — Top-level type: dict
+[PASS] Metadata contains frame/gaze-related records — 21 candidate records detected; inspect schema if fewer
+[PASS] Metadata includes input coordinates — Key-name presence check only; values not independently validated
+[PASS] Metadata includes eye rotation data — Key-name presence check only; values not independently validated
+[PASS] Metadata includes pupil centre data — Key-name presence check only; values not independently validated
+[PASS] Metadata includes camera matrix data — Key-name presence check only; values not independently validated
+
+Notes:
+- This is a local file/package sanity check, not an official hackathon score.
+- It does not open or re-render the .blend scene.
+- Metadata key checks detect likely fields; they do not validate numerical correctness.
+- Blender head-rig behavior and five-direction gaze behavior still require visual/runtime testing.
